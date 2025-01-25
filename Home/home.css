@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --neutra-black: #263238; 
+    --neutra-d-grey: #4d4d4d; 
+    --neutra-grey: #717171; 
+    --neutra-l-grey: #89939e;
+    --neutra-grey-blue: #abbed1;
+    --neutra-silver: #f5f7fa;
+    --neutra-white:#ffffff;
+    --primaria: #28cb8b;
+    --info: #2194f3;
+    --shade1: #43A046;
+    --shade2: #388e3b;
+    --shade3: #237d31;
+    --shade4: #1b5e1f;
+    --shade5: #103e13;
+    --action-warning: #fbc02d;
+    --action-error: #e53835;
+    --action-success: #2e7d31;
+    --cor-antiga: #28a745; 
+}
+#planejamentofinanceiro-comprimidos{
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--neutra-white);
+    padding: 1rem;
+    border-bottom: 1px solid var(--neutra-l-grey);
+}
+
+.header-logo img{
+    height: 74px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: var(--neutra-black);
+    position: relative;
+    font-weight: 500;
+    font-size: 1.12rem;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--shade3); 
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.3s ease; 
+  }
+  
+  .menu a:hover::after {
+    width: 50%;
+  }
+
+.btn-primary {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primaria);
+    color: var(--neutra-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--shade1);
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.partners {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--neutra-white);
+}
+
+.partners h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.partners p {
+    font-size: 1rem;
+    color: var(--neutra-grey);
+    margin-bottom: 1.5rem;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: var(--neutra-grey-blue);
+    border-radius: 50%;
+}
+
+.services {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.9rem;
+    color: var(--neutra-black);
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--neutra-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: var(--neutra-black);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--neutra-grey);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28px 8%;
+    background-color: var(--neutra-black);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    min-width: 200px;
+}
+
+.footer-logo img {
+    width: 130px;
+}
+
+.footer-logo p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: var(--neutra-silver);
+    font-weight: 400;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: var(--neutra-white);
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 1.2rem;
+}
+
+.footer-column ul li a {
+    color: var(--neutra-grey);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+    color: var(--neutra-white);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--neutra-grey);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--neutra-white);
+}
+
+.planejamentoFinanceiro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--neutra-silver);
+    padding: 28px 8%;
+    gap: 100px; 
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px
+}
+.image-container{
+    display: flex; 
+    align-items: center;
+    width: 40%;
+}
+.image-container img{
+    width: 400px; 
+}
+
+.content-title h1{
+    font-size: 3rem;
+}
+
+.content-title p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+
+.card img{
+    width: 100%;
+    height: 60%;
+}
+
+@media (max-width: 835px) {
+    .menu{
+        display: none;
+    }
+    .image-container img{
+        display: none;
+    }
+    .footer-logo p {
+        font-size: 0.6rem;
+    }
+    #planejamentofinanceiro-comprimidos{
+        display: block;
+    }
+}
+
+@media(max-width: 430px){
+    .hero{
+        justify-content: center;
+    }
+    .buttons{
+        display: none;
+    }
+
+    #planejamentofinanceiro-comprimidos{
+        display: none;
+    }
+    .content-title{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content-title h1{
+        font-size: 1.6rem;
+    }
+    .content-title p{
+        font-size: 1rem;
+    }
+    .content{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        display: none;
+    }
+    .services h2{
+        font-size: 1.6rem
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+
