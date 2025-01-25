@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="secundary.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="hero">
+        <div class="header-logo">
+            <a href="Home/home.html"><img src="/src/images/logo2.png" alt="MoneyManager Logo"></a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+              <li><a href="Home/home.html">Home</a></li>
+              <li><a href="/Home/home.html#recursos">Serviços</a></li>
+              <li><a href="/Home/home.html#junte-se-a-nos">Junte-se a nós</a></li>
+            </ul>
+          </nav>
+          
+        <div class="buttons">
+            <a href="/secundary.html" class="btn-primary">Comece agora mesmo!</a>
+        </div>
+    </header>
+
+      <main>
+        <div class="resume">
+          <div>
+            Entradas: R$
+            <span class="incomes">0.00</span>
+          </div>
+          <div>
+            Saídas: R$
+            <span class="expenses">0.00</span>
+          </div>
+          <div>
+            Total: R$
+            <span class="total">0.00</span>
+          </div>
+        </div>
+        <div class="newItem">
+          <div class="divDesc">
+            <label for="desc">Descrição</label>
+            <input type="text" id="desc" />
+          </div>
+          <div class="divAmount">
+            <label for="amount">Valor</label>
+            <input type="number" id="amount" />
+          </div>
+          <div class="divType">
+            <label for="type">Tipo</label>
+            <select id="type">
+              <option>Entrada</option>
+              <option>Saída</option>
+            </select>
+          </div>
+          <button id="btnNew" class="btn-primary">Incluir</button>
+        </div>
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th class="columnAmount">Valor</th>
+                <th class="columnType">Tipo</th>
+                <th class="columnAction"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+      </main>  
+
+
+      
+      <footer>
+        <div class="footer-logo">
+            <img src="/src/images/logo2.png" alt="MoneyManager Logo">
+            <p>Copyright &copy; 2025. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                    <li><a href="#">Politica de privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+    
+      <script src="secundary.js"></script>
+    </body>
+    </html>
